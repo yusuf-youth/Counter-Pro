@@ -1,0 +1,32 @@
+.counter-button {
+  @include center-content(true);
+  @include reset-button;
+  @include square(80px);
+
+  --counterButtonShadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+  flex-shrink: 0;
+  background-color: var(--color-light-gray);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: var(--counterButtonShadow);
+
+  &--light-shadow {
+    --counterButtonShadow: 0 2px 6px rgba(255, 255, 255, 0.08),
+      0 4px 12px rgba(255, 255, 255, 0.03);
+  }
+
+  @include hover {
+    background-color: var(--color-medium-gray);
+  }
+
+  &:active {
+    @include hover-effect;
+  }
+
+  svg {
+    @include square(70%);
+  }
+}
+

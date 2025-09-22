@@ -1,0 +1,8 @@
+.counter-display {
+  margin-top: 60px;
+  margin-bottom: auto;
+  
+  &--light {
+    color: var(--color-light);
+  }
+}

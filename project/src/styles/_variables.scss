@@ -1,0 +1,39 @@
+:root {
+  --color-light: #ffffff;
+  --color-light-alt: #ebebeb;
+  --color-dark: #000000;
+
+  --color-dark-alt: rgb(42, 42, 42);
+  --color-dark-gray: #696969;
+  --color-medium-gray: rgb(155, 154, 154);
+  --color-light-gray: #c0c0c0;
+
+  --font-family-base: "Inter", sans-serif;
+
+  --border: ;
+  --border-radius: ;
+
+  --shadow-dark: 0 2px 6px rgba(0, 0, 0, 0.1);
+  --shadow-light: 0 2px 6px rgba(255, 255, 255, 0.08);
+  --shadow-inner: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+
+  --input-height: ;
+  --button-height: ;
+
+  --header-height: 50px;
+  --container-width: 700px;
+
+  --transition-duration: 0.2s;
+
+  --gray-100: #f7fafc;
+  --gray-200: #edf2f7;
+  --gray-300: #e2e8f0;
+  --gray-400: #cbd5e0;
+  --gray-500: #a0aec0;
+  --gray-600: #718096;
+  --gray-700: #4a5568;
+  --gray-800: #2d3748;
+  --gray-900: #1a202c;
+  --gray-950: #0f1117;
+  --gray-975: rgb(17, 19, 24);
+}

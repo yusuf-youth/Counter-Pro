@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 20px 5px;
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 20px;
+  }
+}

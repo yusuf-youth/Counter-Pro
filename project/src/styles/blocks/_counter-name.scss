@@ -1,0 +1,33 @@
+.counter-name {
+  margin-top: 20px;
+  
+  @include mobile {
+    margin-top: 30px;
+  }
+
+  &__input {
+    @include fluid-text(26, 22);
+
+    padding-block: 5px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+
+    &--dark {
+      color: var(--color-light);
+
+      @include hover {
+        background-color: var(--color-dark-alt) !important;
+      }
+    }
+
+    @include hover {
+      background-color: var(--color-light);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
