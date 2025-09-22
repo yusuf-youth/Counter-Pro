@@ -23,3 +23,45 @@ The project has several features that are worth paying attention to.
     <b>Dynamic CSS Class Management. </b> The app conditionally adds or removes CSS classes based on component state, enabling features like marking tasks as complete, ensuring smooth UI transitions without directly accessing or manipulating DOM elements.
   </li>
 </ul>
+
+<h3>Markup & Styles</h3>
+<ul>
+  <li>
+    <b>BEM. </b>The project follows the BEM methodology for structuring SCSS, where each component is broken down into <i>blocks</i>, <i>elements</i>, and <i>modifiers</i>. This approach ensures that the code is modular, scalable, and easy to maintain.
+  </li>
+  <li>
+    <b>Global Styles. </b>The project has <i>_global.scss</i> for global styles, <i>_normalize.scss</i> for resetting default styles, <i>_mixins.scss</i> and <i>_media.scss</i> for comfortable styling and others.
+  </li>
+  <li>
+    <b>CSS Property Grouping. </b> CSS properties are organized in a consistent and logical order to improve readability, maintainability, and ease of debugging.
+  </li>
+  <li>
+    <b>CSS Variables. </b>The project uses css variables throughout styles ensuring maintainability, reusability, and consistency of the code.
+  </li>
+  <li>
+    <b>SCSS. </b>The project is written in the SCSS preprocessor and contains useful features such as mixins for comfortable styling.
+  </li>
+</ul>
+
+<h2>App Features</h2>
+The app has several features:
+<ul>
+  <li>
+    <b>Customizable Name. </b> Users can give their counter a custom name or title, making it useful for tracking different activities like "Push Ups" or "Laps".
+  </li>
+  <li>
+    <b>Persistent State. </b> The counter's value and its custom name are saved to the browser's localStorage, so the data remains even after the user closes and re-opens the app.
+  </li>
+  <li>
+    <b>Mark Tasks. </b> Users can mark tasks as completed, helping to track progress.
+  </li>
+  <li>
+    <b>Toggle Modes. </b> Users can toggle dark/light modes, which enhances the user experience.
+  </li>
+  <li>
+    <b>Notes. </b> The app allows users to add additional details related to task list.
+  </li>
+  <li>
+    <b>Persistent Storage. </b> The app implemented local storage that allows tasks, notes and theme mode option to be saved, ensuring users don't lose their settings upon closing the app.
+  </li>
+</ul>
