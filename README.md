@@ -8,16 +8,16 @@ The project has several features that are worth paying attention to.
 <h3>React</h3>
 <ul>
   <li>
-    <b>Components. </b> This project's components are structured to promote reusability and a clear separation of concerns, with distinct files for each UI element. Components like PlusButton.jsx and MinusButton.jsx are highly specific and focus on a single action, while more general components like Controls.jsx group these smaller parts together to build a complete and logical UI section.
+    <b>Components. </b> The project's components are structured for reusability and a clear separation of concerns, with specific UI elements like <code>PlusButton.jsx</code> and <code>MinusButton.jsx</code> being grouped by more general components like <code>CounterButton.jsx</code> to form a logical UI.
   </li>
   <li>
-    <b>Hooks. </b> This project utilizes a suite of React hooks to manage its state and side effects. useState is used for simple state like the counter's name, while useReducer handles the more complex numerical count, and useEffect is used to persist state to localStorage and handle keyboard events.
+    <b>Hooks. </b> This project uses a suite of React hooks, with <code>useState</code> for simple state, <code>useReducer</code> for complex numerical state, and <code>useEffect</code> to handle side effects like data persistence and keyboard events.
   </li>
   <li>
-    <b>Context. </b> The Context API is used to share the counter's state and functions throughout the application without manually passing props through every component level. This centralizes the state, allowing any component to easily access and modify the count, name, or theme using the useCounter and useTheme hooks.
+    <b>Context. </b> The Context API is used to share the counter's state and functions throughout the application, centralizing the state and allowing any component to easily access it via the <code>useCounter</code> and <code>useTheme</code> custom hooks.
   </li>
   <li>
-    <b>useReducer. </b> The useReducer hook is used in this project to manage the counter's numerical state in a predictable and centralized way. By dispatching actions like "INCREMENT" or "DECREMENT," all state-changing logic is consolidated into a single reducer function, making it easier to debug and scale the application's core functionality.
+    <b>useReducer. </b> The <code>useReducer</code> hook manages the counter's numerical state by centralizing all state-changing logic into a single reducer function, making it easier to debug and scale the app.
   </li>
   <li>
     <b>Dynamic CSS Class Management. </b> The app conditionally adds or removes CSS classes based on component state, enabling features like marking tasks as complete, ensuring smooth UI transitions without directly accessing or manipulating DOM elements.
@@ -53,15 +53,15 @@ The app has several features:
     <b>Persistent State. </b> The counter's value and its custom name are saved to the browser's <code>localStorage</code>, so the data remains even after the user closes and re-opens the app.
   </li>
   <li>
-    <b>Mark Tasks. </b> Users can mark tasks as completed, helping to track progress.
+    <b>User-Friendly Interface. </b> The app has a clean, minimalist design with a large, central number and simple buttons for incrementing and decrementing the count.
   </li>
   <li>
-    <b>Toggle Modes. </b> Users can toggle dark/light modes, which enhances the user experience.
+    <b>Theming. </b> The app includes a light/dark theme toggle, allowing users to switch the color scheme to their preference.
   </li>
   <li>
-    <b>Notes. </b> The app allows users to add additional details related to task list.
+    <b>Reset Functionality. </b> A dedicated button allows the user to quickly reset the counter to zero.
   </li>
   <li>
-    <b>Persistent Storage. </b> The app implemented local storage that allows tasks, notes and theme mode option to be saved, ensuring users don't lose their settings upon closing the app.
+    <b>Keyboard Controls. </b> The app also has keyboard controls that allow users to increment and decrement the count using the <code>+</code> and <code>-</code> keys.
   </li>
 </ul>
