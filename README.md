@@ -50,7 +50,7 @@ The app has several features:
     <b>Customizable Name. </b> Users can give their counter a custom name or title, making it useful for tracking different activities like "Push Ups" or "Laps".
   </li>
   <li>
-    <b>Persistent State. </b> The counter's value and its custom name are saved to the browser's localStorage, so the data remains even after the user closes and re-opens the app.
+    <b>Persistent State. </b> The counter's value and its custom name are saved to the browser's <code>localStorage</code>, so the data remains even after the user closes and re-opens the app.
   </li>
   <li>
     <b>Mark Tasks. </b> Users can mark tasks as completed, helping to track progress.
