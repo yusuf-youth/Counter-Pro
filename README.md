@@ -19,10 +19,10 @@ The project has several features that are worth paying attention to.
   </li>
   <li>
     <b>Context. </b> The Context API is used to share the counter's state and functions throughout the application, centralizing the state and allowing any component to easily access it via the <code>useCounter</code> and <code>useTheme</code> custom hooks.
-  </li>
+  <!-- </li>
   <li>
     <b>useReducer. </b> The <code>useReducer</code> hook manages the counter's numerical state by centralizing all state-changing logic into a single reducer function, making it easier to debug and scale the app.
-  </li>
+  </li> -->
   <li>
     <b>Dynamic CSS Class Management. </b> The app conditionally adds or removes CSS classes based on component state, enabling features like marking tasks as complete, ensuring smooth UI transitions without directly accessing or manipulating DOM elements.
   </li>
