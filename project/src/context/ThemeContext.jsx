@@ -1,4 +1,6 @@
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, { createContext, useContext, useEffect } from "react";
+import useLocalStorageState from "../hooks/useLocalStorageState";
+import { STORAGE_KEYS } from "../script/constants";
 
 const ThemeContext = createContext({
   isDarkTheme: false,
@@ -6,14 +8,10 @@ const ThemeContext = createContext({
 });
 
 export const ThemeProvider = ({ children }) => {
-  const [isDarkTheme, setDarkTheme] = useState(false);
-
-  useEffect(() => {
-    const storedTheme = localStorage.getItem("theme");
-    if (storedTheme !== null) {
-      setDarkTheme(storedTheme === "true");
-    }
-  }, []);
+  const [isDarkTheme, setDarkTheme] = useLocalStorageState(
+    STORAGE_KEYS.THEME,
+    false
+  );
 
   useEffect(() => {
     document.body.classList.toggle("dark-theme", isDarkTheme);
