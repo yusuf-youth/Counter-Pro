@@ -13,6 +13,10 @@ The project has several features that are worth paying attention to.
   <li>
     <b>Hooks. </b> This project uses a suite of React hooks, with <code>useState</code> for simple state, <code>useReducer</code> for complex numerical state, and <code>useEffect</code> to handle side effects like data persistence and keyboard events.
   </li>
+  </li>
+  <li>
+    <b>Custom Hooks. </b> The custom hooks in this project, <code>useLocalStorageState</code>, <code>usePersistedReducer</code>, and <code>useKeyboardShortcut</code>, centralize logic, which makes the codebase cleaner and more organized. 
+  </li>
   <li>
     <b>Context. </b> The Context API is used to share the counter's state and functions throughout the application, centralizing the state and allowing any component to easily access it via the <code>useCounter</code> and <code>useTheme</code> custom hooks.
   </li>
