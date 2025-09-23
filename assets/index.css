@@ -315,7 +315,8 @@ h4,
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    box-shadow: var(--counterButtonShadow)
+    box-shadow: var(--counterButtonShadow);
+    user-select: none;
 }
 
 .counter-button--light-shadow {
